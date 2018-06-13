@@ -19750,6 +19750,7 @@ THREE.OrbitControls.prototype = Object.create(THREE.EventDispatcher.prototype);
         }
     }
 })();
+/*
 (function() {
     var PianoKey, PianoKeyboard, PianoKeyboardDesign, __bind = function(fn, me) {
         return function() {
@@ -19971,6 +19972,8 @@ THREE.OrbitControls.prototype = Object.create(THREE.EventDispatcher.prototype);
     this.PianoKeyboardDesign = PianoKeyboardDesign;
     this.PianoKeyboard = PianoKeyboard
 }).call(this);
+*/
+
 (function() {
     var NoteRain, __bind = function(fn, me) {
         return function() {
