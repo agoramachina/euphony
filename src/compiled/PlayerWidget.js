@@ -6,6 +6,7 @@
   PlayerWidget = (function() {
     function PlayerWidget(container) {
       this.displayProgress = bind(this.displayProgress, this);
+      this.getFirstTrack = bind(this.getFirstTrack, this);
       this.getRandomTrack = bind(this.getRandomTrack, this);
       this.setTrackFromHash = bind(this.setTrackFromHash, this);
       this.setTrack = bind(this.setTrack, this);
@@ -233,6 +234,10 @@
 
     PlayerWidget.prototype.getRandomTrack = function() {
       return this.playlist[Math.floor(Math.random() * this.playlist.length)];
+    };
+
+    PlayerWidget.prototype.getFirstTrack = function() {
+      return this.playlist[1];
     };
 
     PlayerWidget.prototype.displayProgress = function(event) {

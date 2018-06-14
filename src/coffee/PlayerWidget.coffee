@@ -157,6 +157,9 @@ class PlayerWidget
 
   getRandomTrack: =>
     @playlist[Math.floor(Math.random() * @playlist.length)]
+    
+  getFirstTrack: =>
+    @playlist[1]
 
   displayProgress: (event) =>
     {current, total} = event
