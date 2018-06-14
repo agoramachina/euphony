@@ -20201,7 +20201,7 @@ THREE.OrbitControls.prototype = Object.create(THREE.EventDispatcher.prototype);
             width = $container.width();
             height = $container.height();
             scene = new THREE.Scene;
-            camera = new THREE.PerspectiveCamera(0, width / height, .001, 1e5);
+            camera = new THREE.PerspectiveCamera(60, width / height, .001, 1e5);
             camera.lookAt(new THREE.Vector3);
             scene.add(camera);
             renderer = new THREE.WebGLRenderer({
